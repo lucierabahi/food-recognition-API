@@ -14,10 +14,8 @@ const Clarifai = require('clarifai');
 const db = knex({
   client: 'pg',
   connection: {
-    host : 'postgresql-reticulated-17453',
-    user : '',
-    password : '',
-    database : 'Food-Recognition-database'
+    host : process.env.DATABASE_URL,
+    ssl: true
   }
 });
 
