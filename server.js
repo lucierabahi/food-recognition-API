@@ -14,10 +14,10 @@ const Clarifai = require('clarifai');
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : 'postgres',
-    database : 'Smart-Brain-database'
+    host : 'postgresql-reticulated-17453',
+    user : '',
+    password : '',
+    database : 'Food-Recognition-database'
   }
 });
 
